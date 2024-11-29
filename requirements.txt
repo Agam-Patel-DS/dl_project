@@ -1,5 +1,5 @@
 ensure
-tensorflow==2.12.0
+tensorflow
 pandas
 dvc
 mlflow==2.2.2
