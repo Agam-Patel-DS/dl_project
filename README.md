@@ -2,7 +2,7 @@
 Deep Learning - Data Science project with MLflow and DVC intergration with modular coding. 
 
 1. Create an environment
-2. Install requirements.txt - `pip install -r requirements.txt'
+2. Install requirements.txt - `pip install -r requirements2.txt'
 
 ## Workflows
 1. Update config.yaml
@@ -15,3 +15,9 @@ Deep Learning - Data Science project with MLflow and DVC intergration with modul
 8. Update the main.py
 9. Update the dvc.yaml
 10. app.py
+
+## Run Main.py
+- `python main.py`
+
+## Run App.py
+- `python app.py`
