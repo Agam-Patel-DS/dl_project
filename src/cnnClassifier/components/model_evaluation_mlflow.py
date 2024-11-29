@@ -5,7 +5,13 @@ import mlflow.keras
 from urllib.parse import urlparse
 from cnnClassifier.entity.config_entity import EvaluationConfig
 from cnnClassifier.utils.common import read_yaml, create_directories,save_json
+import dagshub
+import os
 
+dagshub.init(repo_owner='Agam-Patel-DS', repo_name='dl_project', mlflow=True)
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/Agam-Patel-DS/dl_project.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="Agam-Patel-DS"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="3d17a240490c70ca0d48f408ad47e0542b365a0a"
 
 class Evaluation:
     def __init__(self, config: EvaluationConfig):
